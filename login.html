@@ -49,5 +49,12 @@ function login() {
 }
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://inpmpeylqquwkjhuzdca.supabase.co';
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucG1wZXlscXF1d2tqaHV6ZGNhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM3NDMyOTEsImV4cCI6MjA4OTMxOTI5MX0.B3Ds8Nx5CSxrlCbW7JIi1ejA7gAh3InpU71b7tW7rmM';
+  const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+</script>
+
 </body>
 </html>
